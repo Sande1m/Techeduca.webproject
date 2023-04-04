@@ -8,7 +8,7 @@
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
         <link rel="stylesheet" href="style.css">
-       
+      
 
 
     </head>
@@ -68,24 +68,33 @@
                 </div>
 
             </div>
+            
             <div class="form">
                 <h4>Let's Connect</h4>
                 <p>Enter your details here</p>
+                <form id="form">
                 <div class="form-row">
-                    <input type="text" placeholder="Your Name">
-                    <input type="text" placeholder="Email">
+                    <input  id="name" type="text" placeholder="Your Name">
+                    <div class="msg" id="msg-name"></div>
+                    <input id="email" type="email" placeholder="Email">
+                    <div class="msg" id="msg-email"></div>
+
                 </div>
                 <div class="form-col">
-                    <input type="text" placeholder="Subject">
+                    <input id="subject" type="text" placeholder="Subject">
+                    <div class="msg" id="msg-sub"></div>
                 </div>
                 <div class="form-col">
-                    <textarea name="" id="" cols="30" rows="8" placeholder="How can we help?"></textarea>
+                    <textarea name="text" id="message" cols="30" rows="8" placeholder="How can we help?"></textarea>
+                    <div class="msg" id="msg-message"></div>
                 </div>
                 <div class="form-col">
-                    <button> Send message</button>
+                    <button id="submitbtn" type="submit"> Send message</button>
                 </div>
+                </form>
 
             </div>
+            
 
         </section>
       
@@ -136,6 +145,8 @@
                 </div>
             </div>
         </footer>
+        <script src="script.js"></script>
 
     </body>
+
 </html>
